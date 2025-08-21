@@ -1,0 +1,22 @@
+/* CSS Externo */
+
+body {
+    background:white;
+    /* cor do fundo */
+    color: rgb(11, 11, 242);
+    /* cor de texto */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+a{
+    color: rgb(11, 11, 242);
+    text-decoration: none;
+}
+
+
+ul{
+    list-style: none;
+    /* estilo de lista */
+}
