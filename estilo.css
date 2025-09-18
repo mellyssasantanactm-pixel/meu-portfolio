@@ -4,25 +4,37 @@
 /* Raiz */
 :root,
 :root[data-theme='dark'] {
-    --cor-fundo: #f0aff0;
-    --cor-text0: #fdfafc;
-    --menu-link: rgb(15, 15, 15);
-    --cor-borda: rgb(215, 5, 247);
+    --cor-fundo:  #d84ccf;
+    --cor-text0: #fdfcfc;
+    --menu-link: rgb(12, 12, 12);
+    --cor-borda: rgb(76, 12, 76);
     --cor-cabeçalho: rgb(240, 139, 240);
 
 }
 
 :root[data-theme='light'] {
 
-    --cor-fundo: #e250f0;
-    --cor-texto: #fcf2fc;
+    --cor-fundo: #f0aff0;
+    --cor-texto: #f759f7;
     --menu-link: rgb(18, 18, 18);
-    --cor-borda: rgb(215, 5, 247);
+    --cor-borda: rgb(244, 236, 244);
     --cor-cabeçalho: rgb(240, 139, 240);
-
-
-
 }
+
+/* Reset css = Padronizar */
+/* Seletor Universal */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Inverter Cor Logo = Filtro */
+html[data-theme='light'] .logo{
+    filter: invert(1);
+}
+
+
+
 
 body {
     /* hexadecimal */
@@ -36,7 +48,6 @@ body {
 a {
     color: var(--menu-link);
     text-decoration: none;
-
 }
 
 ul {
@@ -50,11 +61,14 @@ header {
     align-items: center;
     width: 100%;
     background: var(--cor-fundo);
-    border-bottom: 5px solid var(---cor-borda);
+    border-bottom: 5px solid var(--cor-borda);
+    position: fixed;
+    z-index: 9999;
+    /* camadas */
+
 }
 
 .menu-desktop {
-    background: rgb(255, 3, 255);
     display: none;
     /* Esconde o menu desktop */
 }
@@ -111,7 +125,7 @@ botao menu mobile*/
     width: 75%;
     height: 100vh;
     /* viewPort Altura */
-    border-left: 1px solid var(---cor-borda);
+    border-left: 1px solid var(--cor-borda);
     max-width: 320px;
     display: flex;
     flex-direction: column;
