@@ -176,7 +176,9 @@ botao menu mobile*/
     align-items: center;
 }
 
-
+#home{
+    padding: 4.5rem 1rem;
+}
 
 
 /* Medidas Responsivas */
