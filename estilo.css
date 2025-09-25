@@ -4,7 +4,7 @@
 /* Raiz */
 :root,
 :root[data-theme='dark'] {
-    --cor-fundo:  #d84ccf;
+    --cor-fundo: #d84ccf;
     --cor-text0: #fdfcfc;
     --menu-link: rgb(12, 12, 12);
     --cor-borda: rgb(76, 12, 76);
@@ -26,10 +26,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+
+
 }
 
 /* Inverter Cor Logo = Filtro */
-html[data-theme='light'] .logo{
+html[data-theme='light'] .logo {
     filter: invert(1);
 }
 
@@ -176,13 +179,27 @@ botao menu mobile*/
     align-items: center;
 }
 
-#home{
+#home {
     padding: 4.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    display: flex;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2.5rem;
+
 }
 
 
 /* Medidas Responsivas */
 @media (min-width: 768px) {
+
     .menu-desktop {
         display: flex;
         min-width: 30%;
@@ -196,6 +213,29 @@ botao menu mobile*/
         min-width: 30%;
     }
 
+    header {
+        padding: 1rem 6rem;
+    }
 
+    h1 {
+        font-size: 5rem;
+    }
+
+    #home {
+        padding: 8rem 6rem 4rem 6rem;
+    }
+
+.main-content {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+/* FIM mim 768px */
+}
+
+@media (min-width: 1400px) {
+h1{
+    font-size: 2.5rem;
+}
 
 }
