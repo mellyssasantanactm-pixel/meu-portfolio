@@ -1,3 +1,7 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Asset&family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Tangerine:wght@400;700&display=swap');
+
+
 /* css externo */
 
 /* Definir as cores tema dark */
@@ -194,7 +198,29 @@ botao menu mobile*/
 
 h1 {
     font-size: 2.5rem;
+    font-family: "Bodoni Moda", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
+
+h2 {
+    font-family: "Bodoni Moda", serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.55rem;
+    font-family: "Bodoni Moda", serif;
+    font-weight: bold;
+    font-style: italic;
+    /* font-size: normal */
+}
+
+
 
 .video iframe {
     aspect-ratio: 16/9;
@@ -260,14 +286,47 @@ h1 {
     gap: 1rem;
 }
 
-.card-title {
-    color: aliceblue;
+.card-titulo {
+    color: #f9f7f9;
+    /* Cor do texto */
+    font-weight: 3rem;
+    /* Tamanho do texto */
+    font-size: 2rem;
+    /* largura das letras */
+    font-family: Georgia, 'Times New Roman', Times, serif
+        /* estilo das fontes  */
+}
+
+.card-descricao {
+    color: rgb(13, 13, 13);
     /* Cor do texto */
     font-weight: 3rem;
     /* Tamanho do texto */
     font-size: 1rem;
     /* largura das letras */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        /* estilo das fontes  */
+}
+
+.card-lista {
+    color: rgb(245, 241, 246);
+    /* Cor do texto */
+    font-weight: 3rem;
+    /* Tamanho do texto */
+    font-size: 1rem;
+    /* largura das letras */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        /* estilo das fontes  */
+}
+
+.card-item {
+    color: rgb(249, 247, 249);
+    /* Cor do texto */
+    font-weight: 3rem;
+    /* Tamanho do texto */
+    font-size: 1rem;
+    /* largura das letras */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
         /* estilo das fontes  */
 }
 
@@ -289,6 +348,7 @@ h1 {
     .menu-desktop {
         display: flex;
         min-width: 30%;
+        /* alinhar o logo */
     }
 
     .btn-menu-mobile {
@@ -306,6 +366,15 @@ h1 {
     h1 {
         font-size: 5rem;
     }
+ 
+    h2{
+        font-size: 3rem;
+    }
+
+    h3{
+        font-size: 2.5rem;
+    }
+
 
     #home,
     .livros,
@@ -341,10 +410,26 @@ h1 {
 
 }
 
+@media(min-width:1200px) {
+    h2{
+        font-size: 4rem; 
+        color: #fdfcfc;
+     }
+}
+
+
 @media (min-width: 1400px) {
     h1 {
         font-size: 2.5rem;
     }
+
+h2{
+    font-size: 4.5rem;
+}
+
+h3{
+font-size: 3.25;
+}
 
     .descricao-video,
     .livros,
