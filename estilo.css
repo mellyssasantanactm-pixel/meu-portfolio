@@ -31,16 +31,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-
 }
+
 
 /* Inverter Cor Logo = Filtro */
 html[data-theme='light'] .logo {
     filter: invert(1);
 }
 
-
+html{
+    scroll-behavior: smooth;
+}
 
 
 body {
