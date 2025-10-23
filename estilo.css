@@ -13,6 +13,8 @@
     --menu-link: rgb(12, 12, 12);
     --cor-borda: rgb(76, 12, 76);
     --cor-cabeçalho: rgb(240, 139, 240);
+    --cor-hover-icone: #f7b3ed;
+
 
 }
 
@@ -23,6 +25,7 @@
     --menu-link: rgb(18, 18, 18);
     --cor-borda: rgb(244, 236, 244);
     --cor-cabeçalho: rgb(240, 139, 240);
+    --cor-hover-icone: #e005f8;
 }
 
 /* Reset css = Padronizar */
@@ -39,7 +42,7 @@ html[data-theme='light'] .logo {
     filter: invert(1);
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -329,14 +332,69 @@ h3 {
     /* largura das letras */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
         /* estilo das fontes  */
+
 }
+
+.card-item i:hover {
+    color: var(--cor-hover-icone);
+    transition: 0.3s ease-in-out;
+}
+
+.redes-sociais{
+    font-size: 1.2rem
+}
+
+.redes-sociais i:hover {
+    color: var(--cor-hover-icone);
+    transition: 0.3s ease-in-out;
+
+}
+    
+.redes-sociais .instagram{
+    color:#fb04b1;
+    
+}
+
+.redes-sociais .instagram:hover{
+    color:rgb(225, 0, 255);
+}
+
+.redes-sociais .whatsapp{
+    color: rgb(58, 87, 29);
+    
+}
+
+redes-sociais .whatsapp:hover{
+    color: darkolivegreen
+}
+
+.redes-sociais .youtube{
+    color:#f90303;
+    
+}
+
+.redes-sociais .youtube:hover{
+    color:rgb(247, 77, 94);
+}
+
+.redes-sociais .tiktok{
+    color: rgb(20, 20, 20);
+    
+}
+
+redes-sociais .tiktok:hover{
+    color: rgb(11, 11, 11)
+}
+
+
+
 
 /* Medidas Responsivas */
 /* telas até 768 */
 @media(max-width:768px) {
-#home{
-    padding-top: 5rem;
-}
+    #home {
+        padding-top: 5rem;
+    }
 
 }
 
@@ -363,12 +421,12 @@ h3 {
     h1 {
         font-size: 5rem;
     }
- 
-    h2{
+
+    h2 {
         font-size: 3rem;
     }
 
-    h3{
+    h3 {
         font-size: 2.5rem;
     }
 
@@ -408,10 +466,10 @@ h3 {
 }
 
 @media(min-width:1200px) {
-    h2{
-        font-size: 4rem; 
+    h2 {
+        font-size: 4rem;
         color: #fdfcfc;
-     }
+    }
 }
 
 
@@ -420,13 +478,13 @@ h3 {
         font-size: 2.5rem;
     }
 
-h2{
-    font-size: 4.5rem;
-}
+    h2 {
+        font-size: 4.5rem;
+    }
 
-h3{
-font-size: 3.25;
-}
+    h3 {
+        font-size: 3.25;
+    }
 
     .descricao-video,
     .livros,
