@@ -44,6 +44,7 @@ html[data-theme='light'] .logo {
 
 html {
     scroll-behavior: smooth;
+    font-size:62.5%;
 }
 
 
@@ -105,7 +106,7 @@ header {
 
 .menu-text {
     color: var(--menu-link);
-    font-size: 0.9rem;
+    font-size: 1.6rem;
     text-transform: uppercase;
 }
 
@@ -175,7 +176,7 @@ botao menu mobile*/
 }
 
 .logo {
-    width: 3.25rem;
+    width: 4.25rem;
     /* Cumprimento */
     height: 3.90rem;
     /* altura */
@@ -185,6 +186,7 @@ botao menu mobile*/
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-size: 1.6rem;
 }
 
 #home {
@@ -198,6 +200,7 @@ botao menu mobile*/
     display: flex;
     gap: 1.5rem;
     flex-direction: column;
+    padding-top: 2.5rem;
 }
 
 h1 {
@@ -295,7 +298,7 @@ h3 {
     /* Cor do texto */
     font-weight: 3rem;
     /* Tamanho do texto */
-    font-size: 2rem;
+    font-size: 3rem;
     /* largura das letras */
     font-family: Georgia, 'Times New Roman', Times, serif
         /* estilo das fontes  */
@@ -306,7 +309,7 @@ h3 {
     /* Cor do texto */
     font-weight: 3rem;
     /* Tamanho do texto */
-    font-size: 1rem;
+    font-size: 1.6rem;
     /* largura das letras */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
         /* estilo das fontes  */
@@ -317,7 +320,7 @@ h3 {
     /* Cor do texto */
     font-weight: 3rem;
     /* Tamanho do texto */
-    font-size: 1rem;
+    font-size: 1.6rem;
     /* largura das letras */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
         /* estilo das fontes  */
@@ -328,7 +331,7 @@ h3 {
     /* Cor do texto */
     font-weight: 3rem;
     /* Tamanho do texto */
-    font-size: 1rem;
+    font-size: 1.6rem;
     /* largura das letras */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
         /* estilo das fontes  */
@@ -340,8 +343,8 @@ h3 {
     transition: 0.3s ease-in-out;
 }
 
-.redes-sociais{
-    font-size: 1.2rem
+.redes-sociais {
+    font-size: 1.6rem
 }
 
 .redes-sociais i:hover {
@@ -349,69 +352,63 @@ h3 {
     transition: 0.3s ease-in-out;
 
 }
-    
-.redes-sociais .instagram{
-    color:#fb04b1;
-    
+
+.redes-sociais .instagram {
+    color: #fb04b1;
+
 }
 
-.redes-sociais .instagram:hover{
-    color:rgb(17, 17, 17);
+.redes-sociais .instagram:hover {
+    color: rgb(17, 17, 17);
 }
 
-.redes-sociais .whatsapp{
+.redes-sociais .whatsapp {
     color: rgb(58, 87, 29);
-    
+
 }
 
-.redes-sociais .whatsapp:hover{
+.redes-sociais .whatsapp:hover {
     color: darkolivegreen
 }
 
-.redes-sociais .youtube{
-    color:#f90303;
-    
+.redes-sociais .youtube {
+    color: #f90303;
+
 }
 
-.redes-sociais .youtube:hover{
-    color:rgb(247, 77, 94);
+.redes-sociais .youtube:hover {
+    color: rgb(247, 77, 94);
 }
 
-.redes-sociais .tiktok{                                       
+.redes-sociais .tiktok {
     color: rgb(20, 20, 20);
-    
+
 }
 
-.redes-sociais .tiktok:hover{
+.redes-sociais .tiktok:hover {
     color: rgb(11, 11, 11)
 }
 
-.col1{
-background: #e8a8e8;
+/* sobre */
 
+.sobre {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.col2{
-background: #0c0c0c;
+.sobre-logo {
+    width: 100%;
+    border-radius: 50rem;
+    border: 2px solid var(--cor-borda);
 }
 
-.col3{
-    background: #b303f9;
+.sobre-descricao p {
+    text-align: justify;
+    color: #0c0c0c;
+    font-size: 1.6rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
-
-.col4{
-    background: #e413d0;
-}
-
-.col5{
-    background: #f081af;
-}
-
-.col6{
-    background: #e413d0;
-}
-
-
 
 
 /* Medidas Responsivas */
@@ -500,7 +497,8 @@ background: #0c0c0c;
 
 @media (min-width: 1400px) {
     h1 {
-        font-size: 2.5rem;
+
+        font-size: 4rem;
     }
 
     h2 {
