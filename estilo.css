@@ -14,8 +14,7 @@
     --cor-borda: rgb(76, 12, 76);
     --cor-cabeçalho: rgb(240, 139, 240);
     --cor-hover-icone: #f7b3ed;
-
-
+    --cor-fundo-secundaria: #131213;
 }
 
 :root[data-theme='light'] {
@@ -26,6 +25,7 @@
     --cor-borda: rgb(244, 236, 244);
     --cor-cabeçalho: rgb(240, 139, 240);
     --cor-hover-icone: #e005f8;
+    --cor-fundo-secundaria: #fdfcfc;
 }
 
 /* Reset css = Padronizar */
@@ -44,7 +44,7 @@ html[data-theme='light'] .logo {
 
 html {
     scroll-behavior: smooth;
-    font-size:62.5%;
+    font-size: 62.5%;
 }
 
 
@@ -204,7 +204,7 @@ botao menu mobile*/
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-family: "Bodoni Moda", serif;
     font-optical-sizing: auto;
     font-weight: weight;
@@ -213,10 +213,10 @@ h1 {
 
 h2 {
     font-family: "Bodoni Moda", serif;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 h3 {
@@ -227,7 +227,10 @@ h3 {
     /* font-size: normal */
 }
 
-
+p {
+    font-size: 1.6rem;
+    /* igual a 16px */
+}
 
 .video iframe {
     aspect-ratio: 16/9;
@@ -252,7 +255,7 @@ h3 {
 }
 
 .descricao-video h2 {
-    font-size: 2rem;
+    font-size: 2.2rem;
     text-transform: uppercase;
     text-align: justify;
     margin-top: -2rem;
@@ -298,7 +301,7 @@ h3 {
     /* Cor do texto */
     font-weight: 3rem;
     /* Tamanho do texto */
-    font-size: 3rem;
+    font-size: 2.4rem;
     /* largura das letras */
     font-family: Georgia, 'Times New Roman', Times, serif
         /* estilo das fontes  */
@@ -344,7 +347,7 @@ h3 {
 }
 
 .redes-sociais {
-    font-size: 1.6rem
+    font-size: 1.8rem
 }
 
 .redes-sociais i:hover {
@@ -410,6 +413,32 @@ h3 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
+/* footer */
+footer {
+    background: var(--cor-fundo);
+    border-top: 1px solid var(--cor-fundo-secundaria);
+}
+
+footer p {
+    padding: 1.2rem 6rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+}
+
+footer i {
+    color: rgb(244, 6, 113);
+}
+
+footer a {
+    color: #080808;
+}
+
+footer a:hover {
+    color: rgb(181, 178, 183);
+    transition: all 0.3s ease-in-out;
+}
+
+
 
 /* Medidas Responsivas */
 /* telas até 768 */
@@ -441,17 +470,16 @@ h3 {
     }
 
     h1 {
-        font-size: 5rem;
+        font-size: 5.2rem;
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     h3 {
         font-size: 2.5rem;
     }
-
 
     #home,
     .livros,
@@ -469,6 +497,10 @@ h3 {
 }
 
 @media (min-width:992px) {
+    p {
+        font-size: 1.8;
+    }
+
     .projeto-card {
         flex-direction: row;
     }
@@ -489,7 +521,7 @@ h3 {
 
 @media(min-width:1200px) {
     h2 {
-        font-size: 4rem;
+        font-size: 4.5rem;
         color: #fdfcfc;
     }
 }
@@ -498,11 +530,11 @@ h3 {
 @media (min-width: 1400px) {
     h1 {
 
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     h2 {
-        font-size: 4.5rem;
+        font-size: 5.5rem;
     }
 
     h3 {
